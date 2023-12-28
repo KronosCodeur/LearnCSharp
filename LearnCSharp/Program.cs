@@ -1,16 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-namespace CourseOne;
+namespace LearnCsharp;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         int note = 18;
-        int moyenne = 0;
-        moyenne = (note + 8) / 2;
-        Console.WriteLine(moyenne);
-        
+        int average = (note + 8) / 2;
+        Console.WriteLine(average);
+        bool isTrue = false;
+        string chain = "hello \t(\"hello\\)";
+        Console.WriteLine(chain);
+
     }
 }
 
