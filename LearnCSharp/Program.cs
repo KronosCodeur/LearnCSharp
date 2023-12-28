@@ -6,34 +6,43 @@ class Program
 {
     static void Main()
     {
+        greeting("evening");
+        display(findArea(9,4));
 
-        // if
-        int age = 21;
-        bool isAChild = (age < 18);
-        if (isAChild)
+        // function without return
+
+        void greeting(string moment)
         {
-            Console.WriteLine("Your are a child");
-        }
-        else
-        {
-            Console.WriteLine("You are a man or women");
+            switch (moment)
+            {
+                case "morning":
+                    Console.WriteLine("Good " + moment + " everyone, do you sleep well?");
+                    break;
+                case "afternoon":
+                    Console.WriteLine("Good " + moment + " everyone, do you eat anything?");
+                    break;
+                case "evening":
+                    Console.WriteLine("Good " + moment + " everyone, have a good night");
+                    break;
+                default:
+                    Console.WriteLine("unknown moment");
+                    break;
+            }
         }
 
-        // switch case
-        string chain = "hellow";
-        switch (chain)
+        void display(dynamic variable)
         {
-            case "hello":
-            case "hey":
-                Console.WriteLine(chain);
-                break;
-            case "hi":
-                Console.WriteLine("hi");
-                break;
-            default:
-                Console.WriteLine("hello hi");
-                break;
+            Console.WriteLine(variable);
         }
+
+        //function with return
+
+
+        int findArea(int longueur, int largeur)
+        {
+            return longueur * largeur;
+        }
+
     }
 }
 
