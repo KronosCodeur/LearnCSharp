@@ -41,6 +41,7 @@ class Program
                 "Evening","Good Evening"
             }
         };
+        Console.WriteLine(greetingsByMoment["Evening"]);
     }
 }
 
